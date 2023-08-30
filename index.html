@@ -9,11 +9,13 @@
     <title>Teste web page</title>
 </head>
 <body>
+    <input type="checkbox" aria-label="button-checked" role="button" id="close-menu" class="close-menu">
+    <label for="close-menu" aria-label="button-label" class="close-menu-label"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1><a href="#">Logo</a></h1>
+            <h1><a href="#home" onclick="getElementById('close-menu').checked = false">Logo</a></h1>
             <nav>
-                <ul class="navigation">
+                <ul class="navigation" onclick="getElementById('close-menu').checked = false">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#top-languages">Top languages</a></li>
                     <li><a href="#gallery">Gallery</a></li>
@@ -105,7 +107,34 @@
         </div>
     </section>
 
-    <section id="jobs" class="section white-bg"></section>
+    <section id="jobs" class="section white-bg">
+        <div class="main-content jobs-content">
+            <div class="text-content">
+                <h2 class="title-content">Best jobs for developer</h2>
+            </div>
+            <div class="paragraph-container">
+                <div class="paragraph-content">
+                    <p>
+                        <strong>Desenvolvedoras de software</strong> que o desenvolvimento de software  
+                        seja a parte criativa da tecnologia da informação, em que você pode criar 
+                        aplicativos, programas, sistemas e outras soluções de software para os mais 
+                        variados fins e indústrias.</p>
+                </div>
+                <div  class="paragraph-content">
+                    <p>
+                        <strong>Desenvolvedora Web</strong> como profissional de desenvolvimento Web, seu trabalho pode
+                        envolver desde o design visual até os aspectos técnicos e a arquitetura de 
+                        websites.</p>
+                </div>
+                <div  class="paragraph-content">
+                    <p>
+                        <strong>Cientista de dados</strong> nessa área você aplica conhecimentos de 
+                        estatística e modelagem para analisar e interpretar conjuntos complexos de dados 
+                        de várias fontes, a fim de gerar informações valiosas para os negócios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section id="contact" class="section main-bg">
         <div class="main-content contact-content">
